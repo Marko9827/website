@@ -10,10 +10,10 @@ var w = dotty.width = window.innerWidth,
       baseTime: 40,
       addedTime: 10,
       
-      colors: [ 'rgba(121,189,224,alp)', 'rgba(225,235,245,alp)', 'rgba(255,255,255,alp)' ],
+        colors: ['rgba(0, 134, 196,alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)' ],
       
       addedAlpha: 20,
-      strokeColor: 'rgb(28,29,35)',
+        strokeColor: 'rgb(232, 232, 232)',
       
       hueSpeed: .2,
       repaintAlpha: 1
@@ -35,8 +35,9 @@ function loop(){
   tick += opts.hueSpeed;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(41,53,64,alp)'.replace( 'alp', opts.repaintAlpha );
-  ctx.fillRect( 0, 0, w, h );
+ // ctx.fillStyle = 'rgba(41,53,64,alp)'.replace( 'alp', opts.repaintAlpha );
+    ctx.fillStyle = 'rgba(225,225,225,alp)'.replace('alp', opts.repaintAlpha);
+    ctx.fillRect(0, 0, w, h);
   
   for( var i = 0; i < opts.picksParTick; ++i )
     hexs[ ( Math.random() * hexs.length ) |0 ].pick();
