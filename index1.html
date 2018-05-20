@@ -1,190 +1,835 @@
-﻿<html lang="en-us" class=" js cssanimations">
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js">
+ <!--<![endif]-->
+                       <head>
+                           <meta charset="utf-8">
+                           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                           <title>Eronel IT</title>
+                           <meta name="viewport" content="width=device-width, initial-scale=1">
+                           <meta name="Keywords" content="Eronelit, Eronelit Marko Nikolic, Marko Nikolic Eronel HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+                           <meta name="Description" content="EronelIT makes registering Domain Names fast, simple, and affordable. Find out why so many business owners chose EronelIT to be their Domain Name Registrar.. Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+                           <meta name="author" content="Eronelit.com" />
 
-<head>
 
-    <style>
-        body {
-            overflow: hidden;
-        }
-    </style>
+                           <meta property="og:title" content="" />
+                           <meta property="og:image" content="" />
+                           <meta property="og:url" content="" />
+                           <meta property="og:site_name" content="" />
+                           <meta property="og:description" content="" />
+                           <meta name="twitter:title" content="" />
+                           <meta name="twitter:image" content="" />
+                           <meta name="twitter:url" content="" />
+                           <meta name="twitter:card" content="" />
 
-    <meta charset="utf-8">
-    <title>Eronelit</title>
-      
+                           <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+                           <link href="http://eronelit.com/logo.ico" rel="shortcut icon" >
 
-    <meta name="description" content="The description should optimally be between 150-160 characters.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Madeon08">
+                           <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
 
-    <!-- ================= Favicon ================== -->
-    <!-- Standard -->
-    <link rel="shortcut icon" href="/eronelico.png" />
-    <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
-    <!-- Retina iPhone Touch Icon-->
+                           <!-- Animate.css -->
+                           <link rel="stylesheet" href="css/animate.css">
+                           <!-- Icomoon Icon Fonts-->
+                           <link rel="stylesheet" href="css/icomoon.css">
+                           <!-- Bootstrap  -->
+                           <link rel="stylesheet" href="css/bootstrap.css">
+                           <!-- Flexslider  -->
+                           <link rel="stylesheet" href="css/flexslider.css">
+                           <!-- Owl Carousel  -->
+                           <link rel="stylesheet" href="css/owl.carousel.min.css">
+                           <link rel="stylesheet" href="css/owl.theme.default.min.css">
+                           <!-- Theme style  -->
+                           <link rel="stylesheet" href="css/style.css">
+                           <link rel="stylesheet" href="fonts/D3/D3.css" />
+                           <!-- Modernizr JS -->
+                           <script src="js/modernizr-2.6.2.min.js"></script>
+                           <!-- FOR IE9 below -->
+                           <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+                           <meta name="theme-color" content="#DAA520">
 
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
-    <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
-    <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+                           <link rel="stylesheet" href="css/kka.css" />
 
-    <!-- ============== Resources style ============== -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Modernizr runs quickly on page load to detect features -->
-    <script src="js/modernizr.custom.js"></script>
-
-</head>
-
-<body class="mCustomScrollbar _mCS_1" ondragstart='return false' onselectstart='return false' oncontextmenu='return false'>
-    <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0">
-        <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
-
-            <!-- Page preloader -->
-            <div id="loading" class="" style="opacity: 0; display: none;">
-                <div id="preloader" class="" style="opacity: 0;">
-                    <span></span>
-                    <span></span>
+                       </head>
+<body onload="setTimeout()" class="boxscroll do-nicescroll">
+    <!--<div id="root">
+            <div class='loader-container'>
+                <div class='loader'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="850" height="850" viewBox="0 0 850 850">
+                        <g id='circles'>
+                            <circle class='bg' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                            <circle class='fast' fill="none" stroke="#000" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                            <circle class='slow' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                        </g>
+                        <g id='hexas'>
+                            <path d="M334.145 358.92c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.386-4.91-8.504v-89.086c0-3.118 2.21-6.945 4.91-8.504l77.154-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.544c2.7 1.558 4.91 5.385 4.91 8.503v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.155 44.544z" />
+                            <path d="M521.262 359.014c-2.7 1.56-7.12 1.56-9.82 0L434.29 314.47c-2.7-1.56-4.91-5.387-4.91-8.505v-89.087c0-3.118 2.208-6.945 4.91-8.504l77.153-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.542c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.153 44.544z" />
+                            <path d="M614.9 521.2c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504v-89.088c0-3.118 2.208-6.945 4.91-8.504l77.153-44.544c2.7-1.56 7.12-1.56 9.82 0l77.15 44.544c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.208 6.943-4.91 8.503L614.902 521.2z" />
+                            <path d="M521.424 683.294c-2.7 1.56-7.12 1.56-9.82 0l-77.153-44.545c-2.7-1.56-4.91-5.387-4.91-8.505v-89.088c0-3.118 2.21-6.944 4.91-8.504l77.156-44.543c2.7-1.56 7.12-1.56 9.82 0l77.15 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.118-2.208 6.944-4.91 8.504l-77.152 44.544z" />
+                            <path d="M333.73 683.534c-2.7 1.56-7.118 1.56-9.818 0L246.76 638.99c-2.7-1.56-4.91-5.385-4.91-8.503v-89.09c0-3.118 2.21-6.944 4.91-8.504l77.153-44.543c2.7-1.56 7.12-1.56 9.82 0l77.152 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.544z" />
+                            <path d="M240.09 521.345c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504V379.21c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.152 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.543z" />
+                            <path d="M427.785 521.106c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.385-4.91-8.503V378.97c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.153 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.087c0 3.118-2.21 6.944-4.91 8.504l-77.155 44.546z" />
+                        </g>
+                    </svg>
                 </div>
             </div>
-
-            <canvas id="dotty" width="807" height="785"></canvas>
-
-            <!-- Overlay and Star effect -->
-            <div class="global-overlay" style="opacity: 1; transform: translateX(100%);">
-                <div class="overlay skew-part">
-
-                    <div id="stars"></div>
-                    <div id="stars2"></div>
-                    <div id="stars3"></div>
-
-                </div>
-            </div>
-
-            <!-- START - Home/Left Part -->
-            <section id="left-side" class="" style="opacity: 1;">
-
-                <!-- Your logo -->
-                <img src="img/chemical-weapon.png" alt="" class="brand-logo mCS_img_loaded">
-
-                <div class="content">
-
-                    <h1 class="text-intro animated-middle fadeInUp">
-                        EronelIT
-                    </h1>
-
-                    <h2 class="text-intro animated-middle fadeInUp">
-                        USKORO
-                        <br>EronelIT © Marko Nikolić 2016-2018<br>
-                    </h2>
-
-                    <nav>
-                        <ul>
-                            <!---ae->
-                            <li>
-                                <a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro animated-middle fadeInUp">Više informacija</a>
-                            </li> -->
-
-                        </ul>
-                    </nav>
-
-                </div>
-
-                <!-- Social icons -->
-                <div class="social-icons">
-
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-
-
-                </div>
-
-            </section>
-            <!-- END - Home/Left Part -->
-            <!-- START - More Informations/Right Part -->
-            <!-- /. Content -->
-
-
-
-            </section>
-            <!-- START - More Informations/Right Part -->
-            <!-- Button Cross to close the More Informations/Right Part -->
-            <button id="close-more-info" class="hide-close"><i class="icon ion-ios-close-outline"></i></button>
-
-            <!-- START - Newsletter Popup -->
-            <!-- /. Root element of PhotoSwipe. Must have class pswp. -->
-            <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
-            <!-- ********** Resources jQuery ********** -->
-            <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
-            <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
-            <script src="js/jquery.min.js"></script>
-            <script src="js/jquery.easings.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-
-            <!-- PhotoSwipe Core JS file -->
-            <script src="js/velocity.min.js"></script>
-
-            <!-- PhotoSwipe UI JS file -->
-            <script src="js/velocity.ui.min.js"></script>
-
-            <!-- Newsletter plugin -->
-            <script src="js/notifyMe.js"></script>
-
-            <!-- Contact form plugin -->
-            <script src="js/contact-me.js"></script>
-
-            <!-- Mozaic plugin -->
-            <script src="js/dotty-2.js"></script>
-
-            <!-- Scroll plugin -->
-            <script src="js/jquery.mousewheel.js"></script>
-
-            <!-- Custom Scrollbar plugin -->
-            <script src="js/jquery.mCustomScrollbar.js"></script>
-
-            <!-- Popup Newsletter Form -->
-            <script src="js/classie.js"></script>
-            <script src="js/dialogFx.js"></script>
-
-            <!-- PhotoSwipe Core JS file -->
-            <script src="js/photoswipe.js"></script>
-
-            <!-- PhotoSwipe UI JS file -->
-            <script src="js/photoswipe-ui-default.js"></script>
-
-            <!-- Countdown plugin -->
-            <script src="js/jquery.countdown.js"></script>
-
-            <script>
-                $("#getting-started")
-                    // Year/Month/Day Hour:Minute:Second
-                    .countdown("2016/10/24 15:30:30", function(event) {
-                        $(this).text(
-                            event.strftime('%D Dan/a %Hh %Mm %Ss')
-                        );
-                    });
-            </script>
-
-            <!-- Main JS File -->
-            <script src="js/main.js"></script>
-
-
-            <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-
-
-
         </div>
-        <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
-            <div class="mCSB_draggerContainer">
-                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 279px; max-height: 775px; top: 0px;" oncontextmenu="return false;">
-                    <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+    <script>
+     
+        
+            document.getElementById("fh5co-page").style = "display:block;";
+            document.getElementById("root").style = "display:none;"
+        
+    </script>-->
+   
+
+
+<div id="fh5co-page" >
+    <header id="fh5co-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <h1 id="hbl">
+                    <a href="/" class="hbl">EronelIT</a>
+                    <br />
+
+                </h1>
+                <nav role="navigation">
+                    <ul>
+                        <li class="active"><a href="/">Početna</a></li>
+                        <li><a href="#fh5co-services-section">Rešenja</a></li>
+
+                        <li>
+                            <a href="http://login.eronelit.com" target="_parent">
+                                Proizvodi
+                            </a>
+                        </li>
+
+                        <li><a href="http://wiki.eronelit.com" target="_blank">Eronel WIKI</a></li>
+                        <li><a href="#contact">Podrška</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li class="cta" id="open1"><a style="cursor:pointer;" href="http://login.eronelit.com" target="_parent">Eronel SDK | Login</a></li>
+                        <li class="cta" id="close1" style="display:none;"><a style="cursor:pointer;" onclick="sdkdemo_32948">Close Eronel SDK Demo</a></li>
+
+                    </ul>
+                </nav>
+
+                <!-- Modal -->
+
+
+                <script>
+
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <!--<div class="container">
+
+    </div>-->
+    <iframe id="framsdkdemo" style="z-index: -1; position:absolute; display:none;"></iframe>
+
+    <aside id="fh5co-hero" class="js-fullheight">
+
+
+
+
+        <div class="flexslider js-fullheight">
+
+            <ul class="slides">
+                <!--style="background-image: url(images/slide_1.jpg);"-->
+                <li>
+
+                    <canvas id="dotty" style="z-index: -1; position:absolute;"></canvas>
+                    <div class="container " id="dmn">
+                        <div id="zindex" class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                            <div class="slider-text-inner">
+                                <h2>
+                                    PROVERITE DOSTUPNOST DOMENA
+
+                                </h2>
+                                <form id="form31243">
+                                    <input class="form-control" onkeypress="KP1()" id="back1" placeholder="Pronađite savršeno ime domena. | http://example.com" type="url" required />
+                                    <button id="btn13" class="form-control">Pretraga domena</button>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<canvas id="dotty" width="807" height="785"></canvas>
+                    <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text" style="position:fixed;">
+                        <div class="slider-text-inner">
+                            <h2>Start Your Startup With This Template</h2>
+                            <p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                    </div>-->
+                </li>
+                <!--<li style="background-image: url(images/313.png);">
+                    <div class="container">
+                        <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                            <div class="slider-text-inner">
+                                <h2>Take Your Business To The Next Level</h2>
+                                <p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(images/slide_3.jpg);">
+                    <div class="container">
+                        <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                            <div class="slider-text-inner">
+                                <h2>We Think Different That Others Can't</h2>
+                                <p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+    </aside>
+    <div id="fh5co-services-section" >
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                    <h2>
+                        Zašto Eronel IT?
+                    </h2>
                 </div>
-                <div class="mCSB_draggerRail"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-cloud"></i>
+                        <div class="desc">
+                            <h3>
+                                CALF-5
+                            </h3>
+                            <p>
+                                CALF-5 je komercijalni softver, koji omogućava veb upravljanje preko prezentacije.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-server"></i>
+                        <div class="desc">
+                            <h3>
+                                Skladištenje i baze podataka
+                            </h3>
+                            <p>Skalabilno, fleksibilno, skladište objekata visokih performansi i baze podataka za vaše aplikacije.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-code-fork"></i>
+                        <div class="desc">
+                            <h3>Izrada Koda</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-gears"></i>
+                        <div class="desc">
+                            <h3>
+                                Alatke za razvoj [Eronel SDK]
+                            </h3>
+                            <p>
+                                Razvijte i primenite svoje aplikacije pomoću našeg interfejsa komandne linije i drugih alata za razvoj.
+                                <br />
+                                i na našoj aplikaciji na Webu!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-line-chart"></i>
+                        <div class="desc">
+                            <h3>
+                                API platforma i ekosistemi
+                            </h3>
+                            <p>
+                                Cross-cloud API platforma koja omogućava preduzećima da otključaju vrednost podataka, isporučuju savremene aplikacije i moćne ekosisteme.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <div class="services">
+                        <i class="icon-shield"></i>
+                        <div class="desc">
+                            <h3>
+                                Identitet i sigurnost
+                            </h3>
+                            <p>
+                                Kontrolišite pristup i vidljivost resursa koji se pokreću na platformi zaštićenoj <a href="http://jga.eronelit.com" target="_blank">EronelIT JGA</a> sigurnosnim modelom.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</body>
 
+    <div id="fh5co-work-section" class="fh5co-light-grey-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                    <h2>
+                        Najnoviji eksperimenti
+                    </h2>
+                    <p>Eksperiment, ogled, opit, pokus ili proba analitički je postupak za proučavanje uzročno-posledičnih odnosa. To je metod naučnog istraživanja u kojem se namerno i sistematski menja neka pojava, radi izazivanja, a onda posmatranja i merenja neke druge pojave (nezavisno-zavisna promenljiva)...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_1.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">Web Application</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_2.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">User Interface</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_3.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">Branded</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--<div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_4.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">Web</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_5.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">Illustration</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <a href="#" class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_6.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="category">Web Application</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <div class="col-md-12 text-center animate-box">
+                    <p><a href="http://login.eronelit.com/" class="btn btn-primary with-arrow">Vidi više eksperimenata<i class="icon-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div id="fh5co-testimony-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                    <h2>Clients Feedback</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-offset-0 to-animate">
+                    <div class="wrap-testimony animate-box">
+                        <div class="owl-carousel-fullwidth">
+                            <div class="item">
+                                <div class="testimony-slide active text-center">
+                                    <figure>
+                                        <img src="images/person1.jpg" alt="user">
+                                    </figure>
+                                    <blockquote>
+                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                    </blockquote>
+                                    <span>Athan Smith, via <a href="#" class="twitter">Twitter</a></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony-slide active text-center">
+                                    <figure>
+                                        <img src="images/person2.jpg" alt="user">
+                                    </figure>
+                                    <blockquote>
+                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                    </blockquote>
+                                    <span>Nathalie Kosley, via <a href="#" class="twitter">Twitter</a></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony-slide active text-center">
+                                    <figure>
+                                        <img src="images/person3.jpg" alt="user">
+                                    </figure>
+                                    <blockquote>
+                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                    </blockquote>
+                                    <span>Yanna Kuzuki, via <a href="#" class="twitter">Twitter</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--<div id="fh5co-blog-section" class="fh5co-light-grey-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                    <h2>Recent from Blog</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 animate-box">
+                    <a href="#" class="item-grid">
+                        <div class="image" style="background-image: url(images/image_1.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">We Create Mobile App</h3>
+                                <h5 class="date"><span>June 23, 2016</span> | <span>4 Comments</span></h5>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6 animate-box">
+                    <a href="#" class="item-grid">
+                        <div class="image" style="background-image: url(images/image_2.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Geographical App</h3>
+                                <h5 class="date"><span>June 22, 2016</span> | <span>10 Comments</span></h5>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12 text-center animate-box">
+                    <p><a href="#" class="btn btn-primary with-arrow">View More Post <i class="icon-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div id="fh5co-pricing-section">
+        <div class="container pr1">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box plans">
+                    <h2>Preuzmi svoj Veb Hosting!</h2>
+                    <p>
+                        Veb-hosting je tip internet hostinga koji dozvoljava organizacijama i fizičkim licima da naprave svoj veb-sajt kome se može pristupiti preko veba (engl. World Wide Web). <br />
+                        Veb-hostovi su obično kompanije koje daju prostor na serveru koji klijenti mogu da koriste.
+                    </p>
+                    <!-- <form class=" pln0">
+                    <button class="icon-cloud pln1"> JGA CLOUD Plans</button>
+                    <button class="icon-linux pln2"> Linuks Plans</button>
+                    <button class="icon-windows pln3"> Windows Plans</button>
+
+                </form>
+            -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="pricing">
+                    <div class="col-md-3 animate-box">
+                        <div class="price-box">
+                            <h2 class="pricing-plan">Početni</h2>
+                            <div class="price"><sup class="currency">$</sup>30<small>/mesečno</small></div>
+                            <p>
+                                Detalji
+                                <br />
+                                <span><a class="price_v">1</a> Web Sajt/ova</span> <br />
+                                <span><a class="price_v">Protok</a> 100GB/s</span> <br />
+
+                                <span><a class="price_v">CPU</a> 1</span> <br />
+                                <span><a class="price_v">Resursi</a> 2GB RAM</span> <br />
+                                <span><a class="price_v">100GB</a> Prostora</span>  <br />
+                                <span><a class="price_v"> Neometani</a> propusni opseg </span>   <br />
+                                <span>
+                                    <a class="price_v">Besplatni Email</a> - 1 godina.
+                                </span><br />
+                                <span><a class="price_v">Panel</a> CALF-5 </span> <br />
+                                <span><a class="price_v">MySQL</a>5 baza</span><br />
+                                <span><a class="price_v">Besplatan Eronelit JGA SSL</a></span><br />
+                                <span><a class="price_v">Bekap na svakih 5 min</a></span><br />
+
+                            </p>
+
+                            <a href="http://login.eronelit.com/#Link?230$%_42249" class="btn btn-select-plan btn-sm pln_1">Više/Prodavnica</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 animate-box">
+                        <div class="price-box">
+                            <h2 class="pricing-plan">Osnovni</h2>
+                            <div class="price"><sup class="currency">$</sup>80<small>/mesečno</small></div>
+                            <p>
+                                Detalji
+                                <br />
+                                <span><a class="price_v">6</a> Web Sajt/ova</span> <br />
+                                <span><a class="price_v">Protok</a> 1TB/s</span> <br />
+
+                                <span><a class="price_v">CPU</a> 2</span> <br />
+                                <span><a class="price_v">Resursi</a> 4GB RAM</span> <br />
+                                <span><a class="price_v">500GB</a> Prostora</span>  <br />
+                                <span><a class="price_v"> Neometani</a> propusni opseg </span>   <br />
+                                <span>
+                                    <a class="price_v">Besplatni Email</a> - 1 godina.
+                                </span><br />
+                                <span><a class="price_v">Panel</a> CALF-5 </span> <br />
+                                <span><a class="price_v">MySQL</a>20 baza</span><br />
+                                <span><a class="price_v">Besplatan Eronelit JGA SSL</a></span><br />
+                                <span><a class="price_v">Bekap na svakih 2 min</a></span><br />
+
+                            </p>
+
+                            <a href="http://login.eronelit.com/#Link?230$%_423243249" class="btn btn-select-plan btn-sm pln_1">Više/Prodavnica</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 animate-box">
+                        <div class="price-box popular">
+                            <h2 class="pricing-plan pricing-plan-offer">Popularni <span>Najbolja ponuda</span></h2>
+                            <div class="price"><sup class="currency">$</sup>140<small>/mesečno</small></div>
+                            <p>
+                                Detalji
+                                <br />
+                                <span><a class="price_v">6</a> Web Sajt/ova</span> <br />
+                                <span><a class="price_v">Protok</a> 2TB/s</span> <br />
+
+                                <span><a class="price_v">CPU</a> 4</span> <br />
+                                <span><a class="price_v">Resursi</a> 8GB RAM</span> <br />
+                                <span><a class="price_v">1TB</a> Prostora</span>  <br />
+                                <span><a class="price_v"> Neometani</a> propusni opseg </span>   <br />
+                                <span>
+                                    <a class="price_v">Besplatni Email</a> - 2 godine.
+                                </span><br />
+                                <span><a class="price_v">Panel</a> CALF-5 </span> <br />
+                                <span><a class="price_v">MySQL</a>Beskonačno baza</span><br />
+                                <span><a class="price_v">Besplatan Eronelit JGA SSL</a></span><br />
+                                <span><a class="price_v">Bekap na svaki 1 min</a></span><br />
+
+                            </p>   <a href="http://login.eronelit.com/#Link?230$%_42243449" class="btn btn-select-plan btn-sm pln_1">Select Plan</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 animate-box">
+                        <div class="price-box">
+                            <h2 class="pricing-plan">Po dogovoru</h2>
+                            <div class="price"><sup class="currency">$</sup>740<small>/mesečno</small></div>
+                            <p>
+                                Detalji
+                                <br />
+                                <span><a class="price_v">6</a> Web Sajt/ova</span> <br />
+                                <span><a class="price_v">Protok</a> 20TB/s</span> <br />
+
+                                <span><a class="price_v">CPU</a> 14</span> <br />
+                                <span><a class="price_v">Resursi</a> 8GB RAM</span> <br />
+                                <span><a class="price_v">20TB</a> Prostora</span>  <br />
+                                <span><a class="price_v"> Neometani</a> propusni opseg </span>   <br />
+                                <span>
+                                    <a class="price_v">Eronelit JGA Office</a> - 10 godina.
+                                </span><br />
+                                <span><a class="price_v">Panel</a> CALF-5 </span> <br />
+
+                                <span><a class="price_v">MySQL</a>Beskonačno baza</span><br />
+                                <span><a class="price_v">Podobnosti</a>DNS,VPS,NS,SHH,...</span><br />
+
+                            </p>   <a href="http://login.eronelit.com/#Link?230$%_42243449" class="btn btn-select-plan btn-sm pln_1">Započni razgovor</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+
+                    <button type="button" class="icon-book-open btn btn-secondary" onclick="F3924382424()">
+                        Pogledaj Ceo katalog cena i usluga
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="fh5co-contact animate-box" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-md-push-2 animate-box">
+                            <h2>
+                                Kontakt podaci
+                            </h2>
+                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p><br><br>-->
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Contact Info.</h3>
+                            <ul class="contact-info">
+                                <li><i class="icon-map"></i>Serbia Belgrade</li>
+                                <li><i class="icon-phone"></i>+ Uskoro</li>
+                                <li><i class="icon-envelope"></i><a href="mailto:info@eronelit.com">info@eronelit.com</a></li>
+                                <li><i class="icon-globe"></i><a href="#eronelit.com :)">eronelit.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Ime" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Email" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Poruka"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input value="Pošalji" class="btn btn-primary" type="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container pr2">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                <h2>Kupi tvoj domen!</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pricing">
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Starter</h2>
+                        <div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Basic</h2>
+                        <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box popular">
+                        <h2 class="pricing-plan pricing-plan-offer">Pro <span>Best Offer</span></h2>
+                        <div class="price"><sup class="currency">$</sup>74<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Unlimited</h2>
+                        <div class="price"><sup class="currency">$</sup>140<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container pr3">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                <h2>Kupi tvoj domen!</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pricing">
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Starter</h2>
+                        <div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Basic</h2>
+                        <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box popular">
+                        <h2 class="pricing-plan pricing-plan-offer">Pro <span>Best Offer</span></h2>
+                        <div class="price"><sup class="currency">$</sup>74<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 animate-box">
+                    <div class="price-box">
+                        <h2 class="pricing-plan">Unlimited</h2>
+                        <div class="price"><sup class="currency">$</sup>140<small>/month</small></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+            <div class="row">
+             
+
+            </div>
+        </div>
+
+            <div class="fh5co-cta" style="background-image: url(images/323.png);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="col-md-12 text-center animate-box">
+                        <h3>
+Ova stranica je u fazi testiranja! 
+                        </h3>
+                        <p><a  onclick="F3924382424()" style="cursor:pointer;" class="btn btn-primary btn-outline with-arrow">Prijavi me! <i class="icon-arrow-right"></i></a></p>
+                        <button style="background-color:gray;" type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus" onclick="F3924382424()"
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Sve funkcije će zahtevati prijavu na sajt!                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <footer id="fh5co-footer" role="contentinfo">
+
+                <div class="container">
+
+                    <!-- <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>About Us</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <p><a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">Join Us <i class="icon-arrow-right"></i></a></p>
+            </div>
+            <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>Our Services</h3>
+                <ul class="float">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Branding &amp; Identity</a></li>
+                    <li><a href="#">Free HTML5</a></li>
+                    <li><a href="#">HandCrafted Templates</a></li>
+                </ul>
+                <ul class="float">
+                    <li><a href="#">Free Bootstrap Template</a></li>
+                    <li><a href="#">Free HTML5 Template</a></li>
+                    <li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
+                    <li><a href="#">HandCrafted Templates</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>Follow Us</h3>
+                <ul class="fh5co-social">
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            -->
+                    <div class="col-md-12 fh5co-copyright text-center">
+                        <p>
+                            &copy; 2017-2018 Eronelit. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/dotty-2.js">
+
+</script>
+<!-- MAIN JS -->
+<script src="js/main.js"></script>
+
+</body>
 </html>
+
