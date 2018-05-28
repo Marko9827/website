@@ -203,39 +203,28 @@ function valid() {
 
     }
 
-    if (validtxt.value == "eronelit.com") {
-        //valid_F.style = "display: none;";
-        //valid_D.src = "1399/";
-        //valid_D.style = "display:block;";
+     if (validtxt.value == "eronelit.com") {
         opts.colors = ['rgba(123, 0, 255, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
         btn131.textContent = "ZAUZET DOMEN. | PROBAJ DRUGI! :)";
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
         return false;
-    }
-    else {
-        //32
-        //validtxt.style = "border: 1px rgba(255, 33, 33, 0.80) solid; ";
-        //btn131.style = "background-color: rgba(255, 33, 33, 0.80);";
-        //btn131.textContent = "Kod nije validan! Probaj ponovo. | Pokreni DEMO";
-
-        ////1
-        //opts.colors = ['rgba(255, 33, 33, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
-    }
+    } else {}
     if (validtxt.value == "https://eronelit.com") {
         opts.colors = ['rgba(123, 0, 255, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
         btn131.textContent = "ZAUZET DOMEN. | PROBAJ DRUGI! :)";
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
         return false;
-    }
+    } else {}
     if (validtxt.value == "http://eronelit.com") {
         opts.colors = ['rgba(123, 0, 255, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
         btn131.textContent = "ZAUZET DOMEN. | PROBAJ DRUGI! :)";
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
         return false;
-    }
+    } else{}
+
 
      var url2;
 
