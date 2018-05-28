@@ -1,6 +1,6 @@
 var color1;
 color1 = ['rgba(0, 134, 196,alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
-
+/*ZNJ*/
 
 
 var w = dotty.width = window.innerWidth,
